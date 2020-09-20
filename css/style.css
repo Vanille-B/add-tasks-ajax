@@ -1,10 +1,21 @@
-body, html {
+body,
+html {
   font-family: 'Roboto', sans-serif;
+}
+
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.spacing {
+  margin-top: 100px;
 }
 
 .title-underline {
   color: #64676c;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 5rem;
   border-bottom: 2px solid rgb(255, 45, 96);
   display: inline-block;
@@ -12,9 +23,46 @@ body, html {
   font-family: sans-serif;
 }
 
+.checked {
+  background-color: green;
+}
+
+/* Warning-message ↓ */
+.warning-message {
+  position: absolute;
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  color: white;
+  background-color: rgb(255, 45, 96);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, .2);
+  border-radius: .25rem;
+}
+
+.close:hover {
+  color: #f5f5f5;
+}
+
+/* Tasks style ↓ */
+#addtask {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.newtask {
+  cursor: move;
+}
+
+input[type="text"] {
+  cursor: move;
+}
+
+/* Others ↓ */
 .small-title {
   color: #6c757d;
   font-size: 1em;
+  /* position: relative; */
+  margin-top: 20px;
 }
 
 .gray-text {
@@ -23,15 +71,10 @@ body, html {
 
 .disappear:hover {
   color: #f5f5f5;
-  cursor: grabbing;
   transition: all .1s ease-in-out;
 }
 
-/* .green:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "f14a";
-} */
+/* Buttons light & dark styles ↓ */
 .light-icon {
   border: 1px solid #aaa;
   -moz-border-radius: 0.2em;
