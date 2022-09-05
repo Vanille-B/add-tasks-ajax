@@ -1,4 +1,4 @@
-<p align="center"><img src=https://goldenmood.com/wp-content/uploads/2020/09/add-tasks-ajax-git.png></p>
+<p align="center"><img src=https://add-tasks-ajax.netlify.app/img/add-tasks-ajax-git.png></p>
 
 <p align="center">To-do list en Ajax / Ajax To-do list</p>
 <p align="center">
@@ -19,7 +19,9 @@ Langages : Html, Css, jQuery et Ajax
 
 En local : 
 Vous aurez besoin d'un serveur local (Xampp, Mamp etc..)
-En production 
+En production (changer dans le fichier js) :
+url: 'index.html', avec l'url de votre site
+type: 'post', en methode GET
 
 
 --
@@ -35,9 +37,14 @@ Be careful if the page is refreshed, the content will disappear.
 
 
 Use Sortable.js to drag and drop https://github.com/SortableJS/Sortable v.1.15.0
-You will need a local server (Xampp, Mamp etc.)
 Languages: Html, Css, jQuery and Ajax
 
+Local :
+You will need a local server (Xampp, Mamp etc..)
+Production (change in js file) :
+url: 'index.html', with your site's url
+type: 'post', in GET method
 
--
+
+--
 Do not hesitate to send me your corrections or additions directly via GitHub.
