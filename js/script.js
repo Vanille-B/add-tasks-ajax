@@ -10,7 +10,7 @@ $('#todo').append('<form class="form-signin" id="registrationForm"> </div>');
 $('#registrationForm').append('<div class="form-label-group" id="test"> </div>');
 
 
-$('#test').append('<input type="texte" id="addtask" class="form-control" placeholder="Press ↵ Enter to validate" autocomplete="off" autofocus>');
+$('#test').append('<input type="texte" id="addtask" class="form-control" placeholder="Press ↵ Enter or Return to validate" autocomplete="off" autofocus>');
 
 
 
@@ -32,8 +32,8 @@ $('#registrationForm').submit(function (e) {
     e.preventDefault(); // The browser cannot send the form
 
     $.ajax({
-      url: 'index.html', // targeted url
-      type: 'post',
+      url: 'https://add-tasks-ajax.netlify.app', // targeted url on prod
+      type: 'get', // method get for prod
       dataType: 'html',
 
       success: function (response) {
